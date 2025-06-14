@@ -7,7 +7,6 @@
 
 using namespace std;
 
-
 // Функция для вставки узла в дерево
 void AddLeaf(Node*& ptr, int value, const string& s, const string& originalS) {
     // Если текущего узла нет, создаём
@@ -119,7 +118,7 @@ vector<pair<int, string>> Keyboard() {
         cin >> path;
         for (char c : path) {
             if (c != '0' && c != '1') {
-                cerr << "Путь '" << path << "' должен содержать только 0 и 1!" << endl;
+                cerr << "Путь должен содержать только 0 и 1!" << endl;
                 throw runtime_error("");
             }
         }

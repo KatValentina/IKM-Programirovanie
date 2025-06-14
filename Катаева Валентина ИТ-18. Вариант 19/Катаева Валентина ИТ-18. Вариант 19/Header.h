@@ -13,11 +13,11 @@ public:
     int key;
     Node* left;
     Node* right;//указатели на левое и правое поддерево 
-    bool has_key; // true, если узел содержит значение из входных данных
+    bool hasKey; // true, если узел содержит значение из входных данных
 
-    // По умолчанию создаем узел без значения (has_key = false)
-    Node(int val = -1, bool has_k = false)
-        : key(val), left(NULL), right(NULL), has_key(has_k) {
+    // По умолчанию создаем узел без значения (hasKey = false)
+    Node(int val = -1, bool hasK = false)
+        : key(val), left(NULL), right(NULL), hasKey(hasK) {
     }
 
 };

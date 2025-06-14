@@ -1,4 +1,4 @@
-﻿#include <iostream>
+#include <iostream>
 #include <fstream>//для чтения из файла
 #include <string>
 #include <vector>
@@ -41,9 +41,9 @@ int main() {
             AddLeaf(root, pair.first, pair.second, pair.second);
         }
 
-        bool hasZeroNodes = false;
-        CheckEmptyLeaf(root, hasZeroNodes);//проверяем дерево на вспомогательные листья
-        if (hasZeroNodes) {
+        bool hasAuxNodes = false;
+        CheckEmptyLeaf(root, hasAuxNodes);//проверяем дерево на вспомогательные листья
+        if (hasAuxNodes) {
             cerr << "Дерево не может быть построено! Введите корректные данные" << endl;
             return 1;
         }

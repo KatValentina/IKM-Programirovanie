@@ -45,7 +45,6 @@ int main() {
         CheckEmptyLeaf(root, hasAuxNodes);//проверяем дерево на вспомогательные листья
         if (hasAuxNodes) {
             cerr << "Дерево не может быть построено! Введите корректные данные" << endl;
-            return 1;
         }
         else {
             // Отображение дерева
